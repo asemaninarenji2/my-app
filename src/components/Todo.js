@@ -6,7 +6,9 @@ import Backdrop from "./Backdrop";
 function Todo(props) {
   const [modalIsOpen, setModalOpen] = useState(false);
 
-  let deleteHandeler = () => setModalOpen(true);
+  let deleteHandeler = () => {
+    setModalOpen(true);
+  };
   let confirmDelete = () => {
     console.log("DELETE CONFIRMED");
   };
